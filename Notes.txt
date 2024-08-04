@@ -1,3 +1,22 @@
 1. First I create a basic Go-App for hello world
 
-2. Created a dockerfile
+2. Created a dockerfile, which helps in building container image, for our app
+    in a dockerfile, we typically have 4 main points
+    a. FROM - to indicate which version of SDK
+    b. WORKDIR - to specify working directory, to copy the files into
+    c. COPY command
+    d. ENTRYPOINT - which specify that when a container is created from an image, what command it must execute
+    e. RUN command -for creating exe
+
+3. After completing dockerfile, its time to create an image from it.
+    Before that, mak sure yoou are logged in to Docker
+        docker login
+         (Put your username and pass)
+    
+    Then run following command
+        docker build . -t go-containerized:latest
+        // This will give a name to our docker image as go-containerized
+
+4. Once terminal processing over...
+    Go to docker desktop and check the newly created image by us.
+
