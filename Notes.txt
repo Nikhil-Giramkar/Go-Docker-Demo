@@ -20,3 +20,13 @@
 4. Once terminal processing over...
     Go to docker desktop and check the newly created image by us.
 
+5. We can also check if the image is created via terminal
+    docker image ls
+
+6. Run the image to create a container - which runs the code
+    docker run go-containerized:latest
+
+    As soon as we run the above command, we see the output of our go app.
+    Just like we see when we do - go run main.go
+
+
