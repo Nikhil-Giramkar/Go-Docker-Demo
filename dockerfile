@@ -7,6 +7,8 @@ WORKDIR /app
 COPY main.go .
 COPY go.mod .
 
+#install all deps
+RUN go get
 # run a command to build exe and put the output in "bin" folder in "/app" dir
 RUN go build -o bin .
 
