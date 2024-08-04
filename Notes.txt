@@ -1,3 +1,7 @@
+Prerequisites:
+    a. Install GO SDK
+    b. Install Docker Desktop
+
 1. First I create a basic Go-App for hello world
 
 2. Created a dockerfile, which helps in building container image, for our app
@@ -75,6 +79,13 @@ Lets try with an API created via Gin.
     And it works.
 
 This is how, we can create Backend APIs and host it in a Docker container and route them to listen to a port.
+
+10. Create a Docker compose file
+    So that we do not need to type/ remenber the commands 
+    Just do
+        docker compose up
+
+    Your image gets created, container starts running and listening to port 9000
 
 
 

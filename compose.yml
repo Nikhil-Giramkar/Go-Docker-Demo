@@ -1,0 +1,8 @@
+services:
+  img:
+    build: .
+    environment:
+      - PORT=9000
+    container_name: go-container-gin
+    ports:
+      - 9000:9000
