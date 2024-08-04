@@ -1,7 +1,9 @@
-Prerequisites:
+<h2>Prerequisites: </h2>
     a. Install GO SDK
     b. Install Docker Desktop
+<hr>
 
+<h2>Steps to Containerize Go App via Docker </h2>
 1. First I create a basic Go-App for hello world
 
 2. Created a dockerfile, which helps in building container image, for our app
