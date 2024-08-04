@@ -68,6 +68,14 @@ Lets try with an API created via Gin.
 
     docker run -e PORT=9000 -p 9000:9000 go-containerized-ginapi:latest
 
+9. Now if we go to tests.http, it has following command
+    GET http://localhost:8080/ping
+    This should fail, as we are now running on 9000.
+    Then, try by changing the PORT.
+    And it works.
+
+This is how, we can create Backend APIs and host it in a Docker container and route them to listen to a port.
+
 
 
 
